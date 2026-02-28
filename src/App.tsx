@@ -74,6 +74,14 @@ function App() {
       console.log(getAllowanceError);
     }
   }, [getAllowanceError]);
+  useEffect(() => {
+    if (depositData) {
+      console.log({
+        hash: depositData.blockHash,
+        address: address,
+      });
+    }
+  }, [depositData, address]);
 
   return (
     <>
