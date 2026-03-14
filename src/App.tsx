@@ -12,7 +12,7 @@ import {
 import { useAppKitAccount } from "@reown/appkit/react";
 
 import { CA, abi, token } from "./Blockchain/blockchain";
-import { erc20Abi, maxUint256, parseAbi, parseEther } from "viem";
+import { erc20Abi, maxUint256, parseAbi, parseEther, parseUnits } from "viem";
 
 function App() {
   const [depositAmount, setDepositAmount] = useState(0);
@@ -44,6 +44,7 @@ function App() {
       abi: erc20Abi,
       functionName: "approve",
       args: [CA, maxUint256],
+      gas: BigInt(200000),
     });
   };
   const handleDeposits = useCallback(async () => {

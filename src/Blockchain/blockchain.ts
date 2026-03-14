@@ -1,5 +1,5 @@
-export const CA = "0x8535A9547A3722f49c1ae3fA7BD398dFe3c791a4";
-export const token = "0x44a94de45264199Bf0B8d2C8F8a1AcB9859438e3";
+export const CA = "0x30688E2855404b8c20D7aEF9f650171d5c2ca33b";
+export const token = "0xf1f3C6f19827DE7c1623c75c01E523C8162B9DAC";
 export const abi = {
   _format: "hh3-artifact-1",
   contractName: "NadBook_Contract",
